@@ -25,7 +25,7 @@ const input = unzip(
         .filter((n) => n !== "")
         .map((n) => Number.parseInt(n))
     )
-    .filter((line) => line.length !== 2),
+    .filter((line) => line.length !== 0),
 );
 
 const distance = zip(input.left.toSorted(), input.right.toSorted())
